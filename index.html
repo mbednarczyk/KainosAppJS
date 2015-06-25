@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" data-ng-app="KainosApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Kainos App</title>
+
+      <script src="/node_modules/angular/angular.min.js"></script>
+  <script src="/node_modules/angular-route/angular-route.min.js"></script>
+  <script src="AngularApp.js"></script>
+  <script src="controllers/mainApp.js"></script>
+  <script src="controllers/topCtrl.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+    </script>
+  
+  
+  
+</head>
+<body>
+	<div class="container">
+	<nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <!-- Grupowanie "marki" i przycisku rozwijania mobilnego menu -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#/">KainosApp</a>
+        </div>
+     
+        <!-- Grupowanie elementów menu w celu lepszego wyświetlania na urządzeniach moblinych -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+          <ul class="nav navbar-nav">
+            <li><a href="#/topGenre">Gatunki</a></li>
+            <li><a href="#/search">Szukajka</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+    <div class="jumbotron">
+    	<div class="container">
+  			<div ng-view></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+
