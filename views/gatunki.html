@@ -1,0 +1,16 @@
+<div data-ng-controller="topCtrl">
+<table class="table table-bordered table-hover table-condensed">
+                    <thead>
+                        <tr>
+                            <th>  id  </th>
+                            <th> nazwa </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in dataset">
+                            <td> {{item.id}} </td>
+                            <td> {{item.name}} </td>
+                        </tr>
+                    </tbody>
+                </table>        
+            </div>

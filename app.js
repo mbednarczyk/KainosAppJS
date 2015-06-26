@@ -10,13 +10,14 @@ app.use('/node_modules', express.static(__dirname + '/node_modules'));
 // app.get('/', function (req, res) {
 //    res.sendFile(__dirname+'/index.html');
 // });
-app.get('/topGenre', function(req,res){
-    db.getRecords(req,res);
+app.get('#/topGenre', function(req,res){
+     db.getRecords(req,res);
 
   //   var userHistory = db.getRecords(req,res);
+		// console.log("fadsfgjhgfrggfsggh"+userHistory);
 		// res.json(userHistory);
-		// console.log("fadsfgjhgfrggfsggh"+userHistory)
 });
+
 
 var server = app.listen(3000, function () {
 
